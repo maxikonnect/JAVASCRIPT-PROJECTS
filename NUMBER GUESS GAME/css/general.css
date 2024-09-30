@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #e41827;     /* Red */
+    --secondary-color: #1b1e25;   /* Dark Gray */
+    --accent-color: #e74c3c;      /* Red */
+    --background-color: #121315;   /* Light Gray */
+    --background-color1: #353232;  /* Dark Gray */
+    --text-color: #eef0f3;         /* White */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif; 
+    overflow: scroll;
+}

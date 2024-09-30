@@ -1,0 +1,428 @@
+.pageContainer {
+    display: flex; /* Enables Flexbox layout */
+    margin-top: 50px; /* Space above the container */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers items */
+}
+
+.insideContainer {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers items */
+    flex-direction: column; /* Stacks child elements vertically */
+}
+
+.insideContainer p {
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+.landingpager {
+    border-radius: 50%; /* Circular shape */
+    width: 80%; /* Width of the element */
+    margin-left: 20px; /* Space to the left */
+    margin-top: 30px; /* Space above the element */
+    animation: rotation 10s infinite linear; /* Rotating animation */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg); /* Start rotation */
+    }
+    to {
+        transform: rotate(359deg); /* End rotation */
+    }
+}
+
+.insideContainer p {
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+}
+
+.gameHeader {
+    padding: 20px; /* Space inside the header */
+    background-color: var(--primary-color); /* Background color */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.headeritems {
+    display: flex; /* Enables Flexbox layout */
+}
+
+.navigationItems {
+    display: flex; /* Enables Flexbox layout for navigation */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers items */
+    gap: 10px; /* Space between items */
+}
+
+.navigationItems li {
+    list-style: none; /* Removes bullet points */
+    font-size: 1.4rem; /* Font size for list items */
+    padding: 8px 16px; /* Padding around list items */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: var(--text-color); /* Text color */
+}
+
+.navigationItems li:hover {
+    border: 1px solid var(--text-color); /* Border on hover */
+}
+
+.navigationItems a {
+    text-decoration: none; /* Removes underline from links */
+    color: var(--text-color); /* Text color for links */
+}
+
+.gameStarHeaderLogo {
+    border-radius: 50%; /* Circular logo */
+    width: 8%; /* Width of the logo */
+    margin-right: auto; /* Aligns to the left */
+}
+
+.gameStarHeaderLogo img {
+    border-radius: 50%; /* Circular image */
+    width: 100%; /* Full width of the container */
+    margin-right: auto; /* Aligns to the left */
+}
+
+p {
+    font-size: 1.6rem; /* Standard paragraph font size */
+}
+
+main.gamebody {
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Centers child elements horizontally */
+    margin: 20px auto; /* Centers the main element itself horizontally */
+    width: 100%; /* Full width of the main element */
+    max-width: 600px; /* Maximum width to prevent overflow */
+    padding: 20px; /* Padding inside the main element */
+    background-color: var(--secondary-color); /* Background color */
+    border: 1px solid var(--text-color); /* Border around the main element */
+    border-radius: 8px; /* Rounded corners */
+    color: var(--text-color); /* Text color */
+}
+
+.RandomGuesserDiv {
+    background-color: var(--background-color1); /* Background color for the guessing div */
+    padding: 8px 16px; /* Padding around the div */
+    text-align: center; /* Center text inside */
+    font-size: 2rem; /* Font size */
+    z-index: 2; /* Layering order */
+    width: 100%; /* Full width */
+    margin: 20px auto; /* Center with margins */
+}
+
+.RandomGuesser, .winOrLose {
+    animation: colorChanger 4s infinite; /* Color changing animation */
+}
+
+@keyframes colorChanger {
+    0% {
+        color: red; /* Start color */
+    }
+    10% {
+        color: orange; /* Intermediate color */
+    }
+    20% {
+        color: yellow; /* Intermediate color */
+    }
+    30% {
+        color: green; /* Intermediate color */
+    }
+    40% {
+        color: rgb(83, 83, 223); /* Intermediate color */
+    }
+    50% {
+        color: rgb(151, 73, 207); /* Intermediate color */
+    }
+    60% {
+        color: violet; /* Intermediate color */
+    }
+    70% {
+        color: white; /* End color */
+    }
+}
+
+.gameStarter {
+    margin-top: 20px; /* Space above the game starter */
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Centers children horizontally */
+}
+
+#guessNumberRange, #hintNotes, .validNumberColor {
+    padding: 8px 16px; /* Padding inside the elements */
+    border: 1px solid var(--text-color); /* Border around elements */
+    background-color: var(--primary-color); /* Background color */
+    margin-bottom: 30px; /* Space below each element */
+    border-radius: 50px / 100px; /* Rounded corners */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+    text-align: center; /* Center text inside */
+}
+
+form label[for="guess_number"] {
+    font-size: 1.8rem; /* Font size for labels */
+    margin-right: 10px; /* Space to the right */
+    margin-bottom: 10px; /* Space below label */
+}
+
+form input[name="numberGuess"] {
+    width: 80%; /* Width of the input field */
+    padding: 10px 16px; /* Padding inside the input */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid var(--text-color); /* Border color */
+    margin-bottom: 10px; /* Space below the input */
+}
+
+.guess_submit {
+    padding: 8px 16px; /* Padding inside the button */
+    color: var(--text-color); /* Text color */
+    background-color: var(--primary-color); /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 50%; /* Width of the button */
+    margin: 10px auto; /* Center the button */
+    text-align: center; /* Center text inside the button */
+}
+
+.resetButton {
+    text-align: center; /* Center text inside */
+    margin: 0 auto; /* Center the button */
+    padding: 12px 30px; /* Padding inside the button */
+    background-color: var(--primary-color); /* Background color */
+    border: none; /* No border */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.6rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Centers children vertically */
+    justify-content: center; /* Centers children horizontally */
+}
+
+.winOrLose {
+    text-align: center; /* Center text inside */
+    margin: 0 auto; /* Center the button */
+    padding: 12px 30px; /* Padding inside the button */
+    background-color: var(--primary-color); /* Background color */
+    border: none; /* No border */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.6rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Centers children vertically */
+    justify-content: center; /* Centers children horizontally */
+}
+
+#gameHint {
+    padding: 8px 16px; /* Padding inside the button */
+    color: var(--text-color); /* Text color */
+    background-color: var(--primary-color); /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width of the button */
+    margin: 10px auto; /* Center the button */
+    text-align: center; /* Center text inside the button */
+}
+
+/* Animation for fading effect on gameHint and guess_submit */
+#gameHint, .guess_submit {
+    animation: colorOpacity 3s ease-in-out infinite; /* Fading animation */
+}
+
+
+@keyframes colorOpacity {
+    0% {
+        background-color: var(--primary-color); /* Start color */
+        opacity: 0.7; /* Start transparency */
+    }
+    50% {
+        background-color: var(--primary-color); /* Mid color */
+        opacity: 1; /* Fully opaque */
+    }
+    100% {
+        background-color: var(--primary-color); /* End color */
+        opacity: 0.7; /* End transparency */
+    }
+}
+
+.resetBut {
+    margin: 0 auto; /* Center the button */
+}
+
+.hintOfGame {
+    margin-top: 80px; /* Space above the hint section */
+}
+
+#hintNotes {
+    color: white; /* Text color for hints */
+}
+
+/* Hide the game hint initially */
+#hintNotes {
+    display: none; /* Initially hidden */
+    margin-top: 10px; /* Space above when displayed */
+}
+
+.gameresultdisplayColor {
+    background-color: var(--text-color); /* Background color for result display */
+    color: var(--primary-color); /* Text color for result display */
+    margin: 20px 0px; /* Vertical spacing */
+    padding: 10px; /* Padding inside the result display */
+    border-radius: 50px / 100px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+/* Styles for error messages */
+.errorMessage {
+    color: red; /* Red color for error messages */
+}
+
+/* CSS for form elements */
+.container {
+    width: 50%; /* Width of the form container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: var(--secondary-color); /* Background color */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px auto; /* Center the container */
+    color: var(--text-color); /* Text color */
+}
+
+.formh1, .formP {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below each form element */
+}
+
+.formh1 {
+    font-size: 2.5rem; /* Large font size for the header */
+}
+
+.formP {
+    font-size: 1.6rem; /* Font size for paragraph text */
+}
+
+.formMargin {
+    margin-bottom: 20px; /* Space below form margin elements */
+}
+
+/* Styles for input fields */
+input[type=text], textarea, input[type=email] {
+    width: 100%; /* Full width for input fields */
+    padding: 12px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+    font-size: 1.4rem; /* Font size for input text */
+}
+
+label {
+    font-size: 1.5rem; /* Font size for labels */
+}
+
+#submit {
+    text-align: center; /* Center text inside the button */
+    margin: 0 auto; /* Center the button */
+    padding: 12px 30px; /* Padding inside the button */
+    background-color: #04AA6D; /* Button background color */
+    border: none; /* No border */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.6rem; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+}
+
+#submit:hover {
+    background-color: #ffffff; /* Background color on hover */
+    color: #04AA6D; /* Text color on hover */
+}
+
+/* Footer styles */
+footer {
+    bottom: 0; /* Align footer to the bottom */
+    position: relative; /* Keeps footer at the bottom even when scrolling */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    width: 100%; /* Full width of the page */
+    background-color: var(--secondary-color); /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.footerupper {
+    display: flex; /* Enables Flexbox layout */
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.footerupperright {
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-end; /* Align items to the right */
+    font-size: 1.3rem; /* Font size for footer items */
+}
+
+.footerupperright p {
+    font-size: 1.2rem; /* Font size for paragraph in footer */
+    margin: 10px 10px; /* Spacing around footer paragraphs */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footerupperright p:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+.footermiddlehr {
+    color: var(--text-color); /* Color for horizontal rule */
+}
+
+.footermiddlepic {
+    width: 150%; /* Width for middle section picture */
+}
+
+.footermiddle {
+    padding: 30px; /* Padding for middle section */
+    margin-left: 50px; /* Left margin for middle section */
+}
+
+.footerlower {
+    padding: 30px; /* Padding for lower footer */
+    margin-bottom: -20px; /* Negative margin to pull up */
+    background-color: var(--background-color); /* Background color for lower footer */
+    display: flex; /* Enables Flexbox layout */
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.footerlower p {
+    font-size: 1.4rem; /* Font size for lower footer paragraphs */
+    margin-bottom: 10px; /* Space below paragraphs */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%; /* Wider container on smaller screens */
+    }
+    .pageContainer {
+        text-align: center; /* Center text in page container */
+    }
+    .footerlower {
+        padding: 10px; /* Reduced padding for lower footer */
+        margin-bottom: -5px; /* Adjusted bottom margin */
+        margin-top: 10px; /* Space above lower footer */
+    }
+    .gameStarHeaderLogo img {
+        width: 150%; /* Increase logo size on smaller screens */
+    }
+}

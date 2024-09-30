@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Guesser Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="gameHeader">
+        <nav class="headeritems">
+            <a class="gameStarHeaderLogo" href="index.html" aria-label="Go to Game Page">
+                <img src="Assets/images/GameStar(3).png" alt="Game Star logo" loading="lazy">
+            </a>
+            <ul class="navigationItems">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="gamebody">
+        <section>
+            <div class="RandomGuesserDiv">
+                <h1 class="RandomGuesser">Random Guesser</h1>
+            </div>
+            <div>
+                <p id="guessNumberRange"></p>
+                <p id="validNumber"></p>
+            </div>
+            <form action="" method="get" aria-labelledby="guessInstruction">
+                <div class="gameStarter">
+                    <label for="guess_number">Enter Guess Number:</label>
+                    <input type="number" id="guess_number" name="numberGuess" min="1" max="100" placeholder="Number between 1 and 100" required>
+                    <button type="submit" id="guess_submit" class="guess_submit">Submit Guess</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="gameresultdisplay">
+                <p id="guessUpdate"></p>
+                <p id="lowOrHi"></p>
+                <p id="attemptsLeft"></p>
+                <p id="displayResults"></p>
+            </div>
+            <div id="resetBut"></div>
+        </section>
+        <section>
+            <div class="hintOfGame">
+                <button id="gameHint">CLICK TO READ GAME HINT</button>
+                <div id="hintNotes">
+                    <p>*You are to choose a number between 1 and 100</p>
+                    <p>*You have 9 attempts to guess the correct number</p>
+                    <p>*If the correct number is guessed before the 9 attempts, you win</p>
+                    <p>*If you are unable to guess the correct number before the 9 attempts, you lose. <span class="winlose">GAME IS OVER</span></p>
+                    <p>*You can restart a new game if you <span class="winlose">WIN</span> or <span class="winlose">LOSE</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerupper">
+            <div class="footerupperright">
+                <div>
+                    <p>Connect with Us</p>
+                    <p>Telephone: +233552343560</p>
+                    <p>Email: <a href="mailto:tribillio@gmail.com">tribillio@gmail.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <hr class="footermiddlehr">
+        <div class="footermiddle">
+            <p><span class="footermiddlepic">&#128286;</span> Age 18 and above only. Play Responsibly. Betting is addictive and can be psychologically harmful.</p>
+        </div>
+        <div class="footerlower">
+            <p>&copy; 2024 GameStar. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/gamehint.js"></script>
+    <script src="js/validator.js"></script>
+</body>
+</html>
