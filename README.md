@@ -6,5 +6,5 @@
   
 2. **Count App**
    -**Description**:This document outlines the structure, styles, and functionality of the Counter App, which allows users to increment and decrement a counter while logging the values to display the history of changes. The application is built using HTML, CSS, and JavaScript.
-   - **GitHub Repository**:
+   - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/Count%20App)
 
