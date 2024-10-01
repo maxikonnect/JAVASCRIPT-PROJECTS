@@ -4,7 +4,7 @@ Overview
 This document outlines the structure, styles, and functionality of the Counter App, which allows users to increment and decrement a counter while logging the values to display the history of changes. The application is built using HTML, CSS, and JavaScript.
 File Structure
 
-graphql
+
 
 project-root/
 │
