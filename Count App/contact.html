@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Document Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <form action="" method="post">
+                <div class="namediv">
+                    <div class="firstNamediv divider">
+                        <label  for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                    </div>
+                    <div class="lastNamediv divider">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                    </div>
+                    <div class="emaildiv divider">
+                        <p class="emailerror"></p>
+                        <label for="email">Enter Email: </label>
+                        <input id="email" type="email" name="email" placeholder="Enter a valid email" required>
+                    </div>
+                    <div class="messagediv divider">
+                        <label for="message">Message:</label>
+                        <textarea rows="5" cols="30" id="message" name="message" placeholder="Enter your message here" required></textarea>
+    
+                    </div>
+
+                </div>
+                
+                
+                <div class="submitdiv divider">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footerLower">
+            <p>2024. All rights reserved</p>
+        </div>
+    </footer>
+    
+   
+    <script src="js/emailValidation.js"></script>
+</body>
+</html>

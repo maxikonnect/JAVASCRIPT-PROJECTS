@@ -1,0 +1,171 @@
+header nav ul{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color2);
+    padding: 14px 16px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+li{
+    display: inline;
+    margin-left: 0px;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.increaseOrDecrease{
+    display: flex;
+    gap: 10px;
+}
+
+.countScreen{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid var(--background-color);
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.logCount, .clearCounterBoard{
+    padding: 8px 16px;
+    background-color: var(--background-color);
+    color: var( --text-color);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.counter{
+    padding: 12px;
+    background-color: var(--background-color);
+    color: var( --text-color);
+    border: 1px solid var(--backgrond-color1);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.counter:hover, .logCount:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 2px solid var(--background-color);
+}
+
+.counter:active, .logCount:active{
+    transform:translateY(4px);
+}
+
+.numberCount{
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 3rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.errorMessage{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+form{
+    margin-top: 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: var(--background-color2);
+    padding: 40px 20px 20px 20px;
+    border-radius: 10px;
+}
+.emailerror{
+    color: var(--email-color);
+    font-size: 1.4rem;
+    margin-bottom: -1px;
+}
+
+input[type="text"], textarea, input[type="email"]{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.5rem;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid var(--background-color);
+}
+input[type="submit"]{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer
+
+}
+label{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+.divider{
+   margin-bottom: 20px; 
+}
+.footerLower p{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    color: var(--text-color);
+    background-color: var(--background-color2);
+    width: 100%;
+    bottom: 0;
+    padding: 14px 16px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    
+}

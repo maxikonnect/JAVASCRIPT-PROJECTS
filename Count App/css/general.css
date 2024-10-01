@@ -1,0 +1,28 @@
+:root{
+    --primary-color: rgb(213, 45, 45);
+    --text-color: white;
+    --text-color1: black;
+    --background-color: rgb(58, 35, 232);
+    --backgrond-color1: black;
+    --background-color2: rgb(160, 160, 160);
+    --email-color: red;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+
+
+html, body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
