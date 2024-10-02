@@ -1,0 +1,44 @@
+Documentation for Background Color Changer
+Overview
+
+The Background Color Changer is a web application that allows users to change the background color of the webpage with the click of a button. It displays the current RGB color value and features a clean, responsive design.
+Project Structure
+
+The project consists of the following files:
+
+    index.html: The main HTML file for the application.
+    css/style.css: Custom styles for the application.
+    css/general.css: General styles that apply across the application.
+    script.js: JavaScript functionality for changing the background color.
+
+HTML Structure
+
+The HTML structure includes a header with navigation, a main content area with a title and a button, and a footer.
+
+    Header: Contains a navigation menu with links.
+    Main Section: Displays the title, the current color name, and the button to change the color.
+    Footer: Displays copyright information.
+
+CSS Styles
+
+The styles are defined in two CSS files: style.css for specific component styles and general.css for overall styling.
+Key CSS Components
+
+    Navigation Styles: Styles for the navigation bar, including background color and link formatting.
+    Main Content Styles: Styles for the main content area, including layout, typography, and button styles.
+    Footer Styles: Styles for the footer, including background color and text formatting.
+    CSS Variables: Utilizes CSS variables for easy theming and consistent color management.
+
+JavaScript Functionality
+
+The JavaScript file handles the logic for changing the background color.
+Key Features
+
+    Element Selection: The script selects the paragraph for displaying the color name and the button.
+    Event Handling: An event listener is added to the button to trigger the color change.
+    Random Color Generation: Upon button click, three random numbers (0-255) are generated to create an RGB color.
+    Display Color: The generated color is displayed in the paragraph, and the background color of the body is updated accordingly.
+
+Conclusion
+
+The Background Color Changer is a straightforward application that demonstrates fundamental web development skills using HTML, CSS, and JavaScript. It showcases responsive design principles and provides an interactive user experience.
