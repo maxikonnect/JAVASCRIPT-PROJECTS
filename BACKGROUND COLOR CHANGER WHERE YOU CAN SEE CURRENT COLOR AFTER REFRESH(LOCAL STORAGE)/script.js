@@ -1,8 +1,7 @@
 //We are going to access our paragraph and button using our created classes
 const colorName = document.querySelector(".colorName");
 const changeColor = document.querySelector(".changeColor");
-const SaveColor = document.querySelector(".SaveColor");
-const savedColors = document.querySelector(".savedColors");
+
 
 
 /*we now add an eventListener to our button using its class and add a function that we would call
