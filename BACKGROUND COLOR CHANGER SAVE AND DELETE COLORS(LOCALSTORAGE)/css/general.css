@@ -1,0 +1,26 @@
+/* Define CSS variables for reusable values like colors */
+:root {
+    --text-color: rgb(250, 250, 250); /* Main text color, light shade */
+    --text-color1: rgb(0, 0, 0); /* Alternative text color, black */
+    --background-color: rgb(130, 130, 130); /* Background color, grayish tone */
+}
+
+/* Global styles for the HTML element */
+html {
+    box-sizing: border-box; /* Sets the box-sizing model to include padding and border in element’s total width and height */
+    font-size: 10px; /* Sets a base font size of 10px (makes rem scaling easier) */
+}
+
+/* Apply box-sizing to all elements, including ::before and ::after pseudo-elements */
+*,
+::before,
+::after {
+    box-sizing: inherit; /* Inherits the box-sizing rule from html for consistent sizing */
+}
+
+/* Reset default margin and padding for html and body */
+html, body {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: Arial, Helvetica, sans-serif; /* Sets a global font family */
+}

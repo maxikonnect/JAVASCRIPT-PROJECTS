@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the project -->
+    <title>BackGroundColor Changer</title>
+    
+    <!-- LINK to our CSS files style.css and general.css -->
+    <!-- We link css using css/ since we have placed our files inside our folder css -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Header section containing navigation bar -->
+    <header>
+        <nav>
+            <!-- Navigation list -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Main heading for the page -->
+        <h1>Background Color Changer</h1>
+
+        
+        <section>
+            <!-- Paragraph to display the color name -->
+            <p class="colorName"></p>
+            <!-- Button to trigger background color change -->
+            <button class="changeColor">Change Color</button>
+        </section>
+
+        <!-- Second section for saving and clearing colors -->
+        <section>
+            <div>
+                <!-- Button to save the current color -->
+                <button class="saveColor">Save Color</button>
+                <!-- Button to clear all saved colors -->
+                <button class="clearColors">Clear Saved Colors</button>
+            </div>
+
+            <!-- Section to display saved colors -->
+            <div class="savedColors">
+                <!-- Saved colors will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&#64 2024. All rights reserved</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

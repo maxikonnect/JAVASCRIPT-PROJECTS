@@ -1,0 +1,80 @@
+/* Styles for the navigation bar */
+header nav ul {
+    list-style-type: none; /* Removes bullets from the list */
+    background-color: var(--background-color); /* Uses a CSS variable for background color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    padding: 15px; /* Adds custom padding for spacing */
+}
+
+/* Styles for navigation links */
+header nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: var(--text-color); /* Uses a CSS variable for text color */
+    font-size: 1.6rem; /* Increases font size for links */
+}
+
+/* Styles for the main content section */
+main {
+    display: flex; /* Uses flexbox to position content */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Centers text alignment */
+    flex-direction: column; /* Stacks items vertically */
+    margin-top: 100px; /* Adds margin at the top to create space from header */
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 4rem; /* Large font size for heading */
+}
+
+/* Styles for the paragraph inside main */
+main p {
+    font-size: 2rem; /* Larger font size for emphasis */
+}
+
+/* Button styles */
+button {
+    padding: 12px 16px; /* Adds padding inside buttons for larger click areas */
+    border-radius: 12px; /* Rounds the corners */
+    font-weight: bold; /* Makes button text bold */
+    cursor: pointer; /* Changes cursor to pointer when hovering over button */
+    margin-bottom: 10px; /* Adds space below the button */
+}
+
+/* Styles for a button or element with the class 'saveColor' */
+.saveColor {
+    margin-right: 10px; /* Adds space to the right of the element */
+}
+
+
+
+/* Styles for saved color text */
+.savedColors {
+    font-size: 1.6rem; /* Increases font size */
+    color: var(--text-color); /* Uses a CSS variable for text color */
+    margin-top: 10px; /* Adds space above the element */
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+
+/* Styles for the footer */
+footer {
+    left: 0; /* Positions the footer to the left edge */
+    right: 0; /* Positions the footer to the right edge */
+    bottom: 0; /* Fixes the footer at the bottom of the viewport */
+    position: fixed; /* Ensures the footer stays fixed even when scrolling */
+    background-color: var(--background-color); /* Uses a CSS variable for background color */
+}
+
+
+
+/* Styles for the text inside the footer */
+footer p {
+    text-align: right; /* Aligns text to the right */
+    margin-right: 15px; /* Adds margin to the right for spacing */
+    color: var(--text-color); /* Uses a CSS variable for text color */
+    font-weight: bold; /* Makes footer text bold */
+}
