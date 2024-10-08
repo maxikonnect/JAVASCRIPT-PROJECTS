@@ -1,0 +1,34 @@
+Documentation for Normal Mode | Dark Mode Toggle
+
+This documentation explains the setup and behavior of a Normal Mode | Dark Mode switch that allows users to toggle between two visual themes. The implementation is built using HTML for structure, CSS for styling, and JavaScript for interaction. The feature also utilizes localStorage to remember the user's choice across browser sessions.
+1. HTML Structure
+
+    The HTML document defines the structure of the webpage, including a navigation bar that contains the toggle button.
+    The toggle button is represented as a list item in the navigation menu, which dynamically changes its label based on the current mode ("Normal Mode" or "Dark Mode").
+    The button is given a specific class (.normalModeOrDarkMode) to target it for JavaScript interaction.
+
+2. CSS Styling
+
+    The CSS file defines the overall appearance of the webpage and styles for both Normal and Dark modes.
+    Key elements include:
+        Variables for colors (--text-color, --background-color) to easily switch between modes.
+        Responsive typography with media queries to adjust the font size based on screen width.
+        Hover and active states for the toggle button to improve user interaction.
+
+3. JavaScript Functionality
+
+    The JavaScript code manages the functionality of the toggle button:
+        On page load, the script checks if localStorage has stored the user’s mode preference (getDarkMode). If so, it applies the correct mode.
+        An event listener on the toggle button listens for click events. When clicked, it toggles the mode:
+            If in Dark Mode, it switches to Normal Mode and vice versa.
+            The background color of the page is dynamically updated (black for Dark Mode, white for Normal Mode).
+        The user's choice is saved in localStorage to persist across page reloads or browser sessions.
+
+4. Responsive Design
+
+    The webpage layout adapts to different screen sizes using media queries. The font size is adjusted for devices with smaller screen widths to ensure readability.
+
+5. Hover and Active States
+
+    Hover effects enhance the user experience by providing feedback when the user hovers over the toggle button.
+    The active state reduces opacity momentarily to give a tactile effect when the button is clicked.
