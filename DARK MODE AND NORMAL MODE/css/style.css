@@ -1,0 +1,40 @@
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);/*WE HAVE ALREADY SET
+    OUR BACKGROUND COLOR AND WE ADD IT HERE */
+    color: var(--text-color); /*WE ADD OUR TEXT COLOR HERE */
+    
+}
+
+ul li{
+    padding: 20px 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+li a {
+    color: var(--text-color);
+}
+
+.normalModeOrDarkMode{
+    border: 1px solid var(--text-color);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+/*WE THEN SET HOVER EFFECT */
+.normalModeOrDarkMode:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+/*WE THEN SET ACTIVE WE CLICK ON IT */
+.normalModeOrDarkMode:active{
+    opacity: 0.6;
+    
+}
