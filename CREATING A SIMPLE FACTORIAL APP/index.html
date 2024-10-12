@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--WE SET DIRECTION OF TEXT FROM LEFT TO RIGHT-->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE FACTORIAL APP</title>
+    <meta name="description" content="FACTORIAL Making App">
+    <!--LET US THEN LINK OUR CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <!--OUR HEADER FOR OUR APP-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>FACTORIAL APP</h1>
+        <!--DISPLAY FOR ANY ERRORS-->
+        <div class="errordisplay"></div>
+        <div class="container">
+            <label for="enteredValue">Enter A Number</label>
+            <!--WE SPECIFY THE MINIMUM AND MAXIMUM ALLOWED NUMBER-->
+            <!--WE ALSO SPECIFY THE TYPE-->
+            <input 
+            id="enteredValue" class="enteredValue"
+            type="number" 
+            min="1" max = "50"  placeholder="enter a number">
+            <!--THIS IS A BUTTON TO COMPUTE OUR ANSWER-->
+            <button class="compute">Compute</button>
+        </div>
+        <!--THIS IS WHERE WE DISPLAY OUR ANSWER-->
+        <div class="displayResult">
+
+        </div>
+        
+
+    </main>
+    
+    <!--WE LINK OUR SCRIPT.JS-->
+    <script src="script.js"></script>
+</body>
+</html>

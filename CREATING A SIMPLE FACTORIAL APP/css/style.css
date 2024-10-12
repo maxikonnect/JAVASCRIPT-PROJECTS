@@ -1,0 +1,70 @@
+ul{
+    background: linear-gradient(110deg, indigo 40%, purple 30%);
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    margin-bottom: 50px; /*This pushes the main down or creates space between header and main */
+}
+
+ul li a{
+    font-size: var(--body-textsize)
+}
+/*We center the main contents in the middle */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: var(--header-size);
+    text-align: center; /*This centers the header, h1 inside the main */
+    color: var(--header-color); /*We set color of h1 to white */
+}
+
+.container{
+    margin: 20px 0;
+}
+input{
+    width: 200px;
+    padding: 8px;
+    margin: 0 10px; /*Set margins on the left and right of input */
+    border-radius: 10px; /*This rounds the edges */
+}
+
+button{
+    background: rgb(36, 36, 247);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/*What happens when we move over the button */
+button:hover{
+    background-color: white;
+    color: var(--background-color);
+}
+
+/*What happens when we click on button */
+button:active{
+    opacity: 0.6;
+}
+
+label, div, input{
+    font-size: var(--body-textsize);
+}
+label{
+    align-items: center;
+}
+div{
+    text-align: center;
+}
+
+.displayResult, .errordisplay{
+    font-weight: bold;
+    color: var(--text-color);
+}

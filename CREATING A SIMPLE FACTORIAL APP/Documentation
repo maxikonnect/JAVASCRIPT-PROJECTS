@@ -1,0 +1,113 @@
+### Documentation: Simple Factorial App
+
+---
+
+### Overview
+The **Simple Factorial App** is a web-based application designed to compute the factorial of a number between 1 and 50. The app features an intuitive interface, error handling for invalid inputs, and displays the result of the factorial calculation on the screen.
+
+---
+
+### Technologies Used
+
+- **HTML5**: For structuring the web page.
+- **CSS3**: For styling the web page.
+- **JavaScript**: For adding functionality, including error handling and computing the factorial.
+
+---
+
+### Structure
+
+1. **HTML File (`index.html`)**
+   - The main structure of the application with sections for input, error display, and result output.
+   - Links to the stylesheet (`style.css`) and the script (`script.js`).
+
+2. **JavaScript File (`script.js`)**
+   - Contains the functionality to calculate the factorial.
+   - Provides error handling for invalid inputs (numbers less than 1, greater than 50, or non-numeric entries).
+
+3. **CSS File (`style.css`)**
+   - Contains the design of the app, including layout, font sizes, colors, and responsive design rules for smaller screens.
+
+---
+
+### HTML Code Explanation
+
+- **DOCTYPE & Meta Tags**: 
+  Defines the HTML5 document type and metadata like charset and viewport settings for responsive design.
+  
+- **Linking CSS**: 
+  External CSS files are linked for layout (`style.css` and `general.css`).
+  
+- **App Header**: 
+  A navigation bar with a "Home" link.
+
+- **Main Content**: 
+  - **Error Display**: A `<div>` where error messages are shown.
+  - **Input Section**: An input field where users can enter a number between 1 and 50.
+  - **Compute Button**: A button that triggers the factorial calculation.
+  - **Result Display**: A `<div>` where the result of the calculation is shown.
+
+---
+
+### JavaScript Code Explanation (`script.js`)
+
+- **Window.onload Event**: 
+  Ensures that all the HTML content is loaded before the script runs.
+
+- **Event Listeners**:
+  - **Input Validation**: Listens for input changes and checks if the entered value is between 1 and 50. If the input is invalid, an error message is displayed.
+  - **Factorial Function**: Computes the factorial using recursion. If the button is clicked, the factorial is calculated and displayed on the screen.
+  
+- **Factorial Function**:
+  - The function is defined recursively. If the input number is 1 or less, it returns 1 (base case). Otherwise, it calls itself with the value of the number decreased by 1, multiplying it by the current number.
+  
+---
+
+### CSS Code Explanation (`style.css`)
+
+- **Root Variables**:
+  CSS variables like `--text-color`, `--background-color`, and `--header-size` are defined in the `:root` selector for easier customization and reusability.
+
+- **Typography and Responsiveness**:
+  The base font size is set to `62.5%` for easier scaling (equivalent to 10px). Media queries ensure a responsive design by adjusting the font size on smaller screens.
+
+- **Body Styling**:
+  The body background uses a gradient, and margins are set to 0 for a full-screen layout.
+
+- **Button Styling**:
+  Buttons have a gradient background, white text, and smooth hover and active effects for user interaction.
+
+- **Form Elements**:
+  Inputs and labels are styled for easy readability and a clean appearance.
+
+---
+
+### Instructions for Use
+
+1. **Enter a Number**: 
+   - In the input box, type a number between 1 and 50.
+   
+2. **Click "Compute"**: 
+   - Press the **Compute** button. The factorial of the entered number will be calculated and displayed on the screen.
+
+3. **Error Handling**: 
+   - If you enter an invalid number (less than 1, more than 50, or a non-numeric value), an error message will appear. The input field will be cleared, and you'll need to try again.
+
+---
+
+### Styling Explanation
+
+- **Layout**: 
+  The app is centered using Flexbox, with content aligned vertically and horizontally in the middle of the screen.
+  
+- **Colors**: 
+  A combination of purple, indigo, and white colors provides a clean and vibrant interface.
+
+- **Responsive Design**: 
+  The font size adjusts for smaller screens to ensure readability on mobile devices.
+
+---
+
+### Conclusion
+
+The **Simple Factorial App** offers a clean and functional way for users to compute factorials of numbers. It is designed with intuitive interaction, error handling, and a visually appealing interface. The use of HTML, CSS, and JavaScript makes the app responsive, user-friendly, and easy to maintain.

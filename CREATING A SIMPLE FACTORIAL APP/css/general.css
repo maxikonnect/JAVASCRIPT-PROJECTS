@@ -1,0 +1,33 @@
+:root{
+    --text-color: #fff;
+    --background-color: #333;
+    --header-color: #fff;
+    --header-size: 5rem;
+    --body-textsize: 2rem;
+}
+
+html{
+    font-size: 62.5% /*This sets the default font size */
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 50%; /*We set font-size for smaller screens */
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(60deg, purple, grey); /*sets backgroundColor of whole body */
+}
+
+a{
+    text-decoration: none; /*To remove underline of hyperlink */
+    color: var(--text-color);
+}
+
+ul li{
+    list-style: none;
+}
