@@ -1,0 +1,29 @@
+:root{
+    --text-color: #fff;
+    --background-color: #333;
+    --header-size: 5rem;
+}
+
+html{
+    font-size: 62.5%; /*This sets the default font-size */
+}
+
+
+/*Font-size for smaller screens */
+@media (max-width: 600px){
+    html{
+        font-size : 50%;
+    }
+}
+
+/*WE would center or container in the middle */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(60deg, purple, burlywood);
+}
