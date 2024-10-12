@@ -15,6 +15,6 @@
 
 This project demonstrates how to create a simple interactive webpage where a user can reveal or hide a rainbow pattern by clicking a button. The webpage is built using HTML for structure, CSS for styling, and JavaScript for interactivity.
 
-    - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/Making%20A%20Rainbow%20With%20The%20Click%20Of%20A%20Button)
+  - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/Making%20A%20Rainbow%20With%20The%20Click%20Of%20A%20Button)
 
 
