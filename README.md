@@ -10,3 +10,8 @@
 3. **Background Color Changer**
       -**Description**: The Background Color Changer project is a simple, fun web application that lets users change the background color of the page at the click of a button. The color is generated randomly in RGB format, and the new color is displayed on the screen so you can see exactly what it is. The project is built using basic HTML, CSS, and JavaScript, making it a great example of how these technologies work together to create interactive webpages.
       - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/BACKGROUNDCOLOR%20CHANGER)
+  
+4. # Documentation for "Making a Rainbow" Project
+
+This project demonstrates how to create a simple interactive webpage where a user can reveal or hide a rainbow pattern by clicking a button. The webpage is built using HTML for structure, CSS for styling, and JavaScript for interactivity.
+
