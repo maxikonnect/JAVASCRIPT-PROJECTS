@@ -1,0 +1,36 @@
+:root{
+    --text-color: #fff;
+    --background-color: #333;
+}
+
+/*This sets our default font-size*/
+html{
+    font-size: 62.5%;
+}
+
+/*We set our font-size on small screen */
+@media (max-width: 600px){
+    html{
+        font-size: 55%;
+    }
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box
+}
+
+/*Let us set the margin and padding of the body to zero*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*This removes the underline from the home link */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none
+}

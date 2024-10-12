@@ -1,0 +1,47 @@
+ul {
+    background: linear-gradient(110deg, green, yellow);
+    padding: 0;
+    margin: 0;
+    padding: 40px;
+
+}
+
+ul li{
+    
+    font-size: 2rem;
+    font-weight: bold;
+} 
+
+ul li a{
+    color: var(--text-color);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+h1{
+    font-size: 3rem;
+}
+/*This sets the height and width of the divs */
+div{
+    width: 100px;
+    height: 50px;
+}
+
+/*WE STYLE OUR RAINBOW AND BUTTON */
+
+button{
+    
+    margin-top: 10px;/*This separates button from rainbow */
+    padding: 10px 16px;
+    color: var(--text-color); /*CHANGES THE TEXT TO WHITE*/
+    background-color: rgb(89, 89, 235);/*SETS BACKGROUND TO BLUE */
+    border-radius: 10px; /*ROUND THE EDGES */
+    cursor: pointer; /*THIS CHANGES THE CURSOR TO A HAND WHEN IS ON BUTTON */
+    font-weight: bold; /*WE MAKE THE FONT BOLD*/
+}
