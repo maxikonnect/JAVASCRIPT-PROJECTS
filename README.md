@@ -21,4 +21,10 @@ This project demonstrates how to create a simple interactive webpage where a use
  -**Simple Factorial App** is a web-based application designed to compute the factorial of a number between 1 and 50. The app features an intuitive interface, error handling for invalid inputs, and displays the result of the factorial calculation on the screen.
 - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/CREATING%20A%20SIMPLE%20FACTORIAL%20APP)
 
+  6. **Testimonial Slider Documentation**
+ Overview
+The **Testimonial Slider** is a simple web page that displays user testimonials in a rotating slider. It showcases user feedback along with their profile pictures in an attractive, responsive design. The testimonials change every five seconds, looping through multiple user reviews.
+- **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/HOW%20TO%20MAKE%20A%20TESTIMONIAL%20SLIDER)
+
+
 
