@@ -1,0 +1,36 @@
+.container {
+    width: 500px; /* Sets the width of the container */
+    min-height: 150px; /* Ensures a minimum height for the container */
+    min-width: 400px; /* Ensures a minimum width for the container */
+    background: linear-gradient(60deg, var(--background-color) 40%, indigo 40%); /* Changes the background of the container to a linear gradient */
+    padding: 70px 20px 20px 20px; /* Adds padding to the container: 70px on top, 20px on the sides and bottom */
+    position: relative; /* Allows for absolute positioning of child elements within this container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    color: var(--text-color); /* Sets the text color based on a custom property */
+    text-align: center; /* Centers the text inside the container */
+}
+
+img {
+    width: 100px; /* Sets the width of the image */
+    height: 100px; /* Sets the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    position: absolute; /* Positions the image absolutely within the container */
+    top: -50px; /* Moves the image up by 50px, making it overlap the container */
+    left: 50%; /* Centers the image horizontally within the container */
+    transform: translateX(-50%); /* Further adjusts the image to ensure it's perfectly centered */
+}
+
+.text, .name {
+    font-size: var(--text-size); /* Sets the font size for both text and name elements using a custom property */
+}
+
+.name {
+    margin-top: 20px; /* Adds space above the name element */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px; /* Adds margin around the container when the screen width is 600px or less */
+    }
+}

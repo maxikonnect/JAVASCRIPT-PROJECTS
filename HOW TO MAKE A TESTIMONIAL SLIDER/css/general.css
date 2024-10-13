@@ -1,0 +1,28 @@
+:root {
+    --text-color: #fff; /* Sets the default text color */
+    --background-color: slateblue; /* Sets the background color for the container */
+    --text-size: 1.6rem; /* Sets the default text size */
+}
+
+html {
+    font-size: 62.5%; /* Sets the default font size to 10px for easier rem calculations (1rem = 10px) */
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box; /* Ensures padding and borders are included within the element's total width and height */
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+}
+
+/* Center the container on the page */
+body {
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding from the body */
+    display: flex; /* Uses flexbox to align content */
+    align-items: center; /* Vertically centers the container */
+    justify-content: center; /* Horizontally centers the container */
+    height: 100vh; /* Sets the body height to cover the full viewport */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets the font family for the page */
+}
