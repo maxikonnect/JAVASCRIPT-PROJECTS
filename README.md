@@ -25,5 +25,9 @@ This project demonstrates how to create a simple interactive webpage where a use
 **Testimonial Slider** is a simple web page that displays user testimonials in a rotating slider. It showcases user feedback along with their profile pictures in an attractive, responsive design. The testimonials change every five seconds, looping through multiple user reviews.
 - **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/HOW%20TO%20MAKE%20A%20TESTIMONIAL%20SLIDER)
 
+7. **Tip Calculator**
+   **Tip Calculator** is a web application that calculates the total amount based on the user-provided bill amount and tip percentage. The interface features a clean, modern design with responsive behavior. The functionality is driven by JavaScript, allowing users to input values and immediately calculate the total.
+Project Structure
+ **GitHub Repository**:[Link to repo](https://github.com/maxikonnect/JAVASCRIPT-PROJECTS/tree/main/TIP%20CALCULATOR)
 
 
