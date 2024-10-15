@@ -1,0 +1,46 @@
+Tip Calculator
+Project Overview
+
+The Tip Calculator is a web application that calculates the total amount based on the user-provided bill amount and tip percentage. The interface features a clean, modern design with responsive behavior. The functionality is driven by JavaScript, allowing users to input values and immediately calculate the total.
+Project Structure
+HTML (index.html)
+
+The HTML structure includes:
+
+    A container displaying the input fields for the bill amount and tip percentage.
+    A button for calculating the total.
+    A section that displays the result (total amount).
+    An image representing food, giving a nice visual touch to the design.
+
+CSS (style.css & general.css)
+
+CSS Features:
+
+    Responsive Design: The layout adjusts for smaller screens using media queries.
+    Container Styling: The main container has rounded corners and a background color that enhances readability.
+    Typography: The font sizes are large and easy to read, with headers and labels clearly distinguished.
+    Interactive Button: The button is styled with hover and click effects to enhance the user experience.
+
+JavaScript (script.js)
+
+Functionality Overview:
+
+    When the user clicks the Calculate button, the script checks for empty fields.
+    If inputs are provided, it calculates the total by adding the tip to the original amount.
+    It also handles errors by displaying a message if any field is left blank.
+    The result is displayed with two decimal precision to ensure accurate financial calculations.
+
+Features
+
+    User-friendly Input Fields: Simple and clear input fields for amount and tip percentage.
+    Dynamic Total Calculation: The total is updated instantly upon clicking the button.
+    Error Handling: If fields are left empty, a red warning message appears.
+    Mobile Responsive: The layout adjusts automatically for smaller devices, making it accessible on phones and tablets.
+
+User Instructions
+
+    Enter the Amount: Input the bill amount in the designated field.
+    Enter Tip Percentage: Input the desired tip percentage.
+    Click 'Calculate': The total amount, including the tip, will be displayed below the button.
+    If any field is empty, an error message will appear, prompting the user to fill in all fields.
+

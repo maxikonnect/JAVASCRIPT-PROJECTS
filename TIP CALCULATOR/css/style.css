@@ -1,0 +1,70 @@
+.container{
+    width: 500px;
+    min-width: 400px;
+    min-height: 150px;
+    background-color: var(--background-color);
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 10px /*ROUNDS CORNERS OF CONTAINER */
+}
+
+img{
+    width: 100px; /*sets width of image */
+    height: 100px; /*sets height of image */
+    border-radius: 50%;/*Makes picture into circle */
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center; /*Centers h1 element in middle of container */
+    font-size: 2.5rem;
+}
+/*SET INPUT INTO BLOCK ELEMENT */
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+label{
+    font-size: 1.8rem;
+}
+
+.total{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 8px;
+}
+/*MAKE BUTTON IN BLOCK ELEMENT AND DESIGN IT */
+
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 10px; /*Round the corners */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--background-color2);
+    color: var(--text-color);
+    border: none;
+    margin-bottom: 20px; /*adds a margin between button and total score */
+    /*let give it a smooth scale */
+    transition: 0.3s linear;
+}
+
+/*EFFECT WHEN HOVER OVER IT */
+
+button:hover{
+    transform: scaleX(105%);
+}
+
+/*WHEN THE BUTTON IS CLICKED */
+
+button:active{
+    opacity: 0.6;
+}

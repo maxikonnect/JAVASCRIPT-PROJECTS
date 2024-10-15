@@ -1,0 +1,42 @@
+/*SET OUR DEFAULT COLORS */
+
+:root{
+    --text-color: #ffffff;
+    --text-color: #cccccc;
+    --background-color: burlywood;
+    --background-color2: #2f4f4f;
+    --button-text-color: #ffffff;
+    --button-bg-color: #333333;
+}
+
+/* SET DEFAULT FONT SIZE */
+
+html{
+    font-size: 62.5%;
+}
+
+/* SETS DEFAULT FONT-SIZE ON SMALLER SCREENS */
+@media (max-width: 600px){
+    html{
+        font-size: 55%;
+    }
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Center the CONTAINER */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color2);
+}
+
