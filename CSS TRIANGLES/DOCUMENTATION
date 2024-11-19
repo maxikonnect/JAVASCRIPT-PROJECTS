@@ -1,0 +1,136 @@
+# Documentation: Creating Triangles Using CSS
+
+This guide demonstrates how to create four distinct triangles using only CSS. The triangles are styled to face upwards, downwards, left, and right, leveraging CSS border properties.
+
+---
+
+## **HTML Structure**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Triangles using CSS</title>
+    <!-- Linking to external CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Container holding all triangles -->
+    <div class="container">
+        <div class="triangle upward"></div>
+        <div class="triangle downward"></div>
+        <div class="triangle left"></div>
+        <div class="triangle right"></div>
+    </div>
+    <!-- Use Live Server to view the results -->
+</body>
+</html>
+```
+
+### Explanation:
+- The `<div class="container">` wraps all the triangles for alignment and spacing.
+- Each triangle is represented by a `div` element with a combination of the base class `.triangle` and a directional class (e.g., `.upward`).
+
+---
+
+## **CSS Styles**
+
+```css
+/* Container settings */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+/* Base triangle styling */
+.triangle {
+    width: 0;
+    height: 0;
+}
+
+/* Upward-facing triangle */
+.upward {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+/* Downward-facing triangle */
+.downward {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid black;
+}
+
+/* Left-facing triangle */
+.left {
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid black;
+}
+
+/* Right-facing triangle */
+.right {
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid black;
+}
+```
+
+---
+
+## **How It Works**
+
+### **1. Base Triangle Setup**
+Each triangle starts with:
+- `width: 0;` and `height: 0;` – this ensures no visible box.
+- Border properties define the triangle's shape. By manipulating border widths and colors, we create the desired triangle orientation.
+
+### **2. Directional Triangles**
+- **Upward Triangle:** 
+  - The `border-left` and `border-right` are transparent, while `border-bottom` is given a solid color. This creates a triangle pointing up.
+
+- **Downward Triangle:**
+  - Similar to upward but with `border-top` as the solid color.
+
+- **Left Triangle:**
+  - The `border-top` and `border-bottom` are transparent, while `border-right` has a solid color.
+
+- **Right Triangle:**
+  - Mirrors the left triangle but with `border-left` solid.
+
+---
+
+## **Styling Tips**
+1. **Adjusting Sizes:**
+   - Change the border sizes to create larger or smaller triangles.
+   
+2. **Colors:**
+   - Replace `black` with any color of your choice for customization.
+
+3. **Spacing:**
+   - Modify the `.container`'s `gap` or `margin` for different layouts.
+
+---
+
+## **Preview**
+Using Live Server or any browser, the layout should display four triangles aligned horizontally. Each triangle will face a different direction, as shown below:
+
+| Direction | Description                           |
+|-----------|---------------------------------------|
+| Upward    | Points upwards                        |
+| Downward  | Points downwards                     |
+| Left      | Points to the left                   |
+| Right     | Points to the right                  |
+
+---
+
+Enjoy experimenting with CSS triangles!

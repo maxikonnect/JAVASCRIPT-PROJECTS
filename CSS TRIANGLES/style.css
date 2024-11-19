@@ -1,0 +1,49 @@
+/*THIS IS OUR CONTAINER TO CONTAIN ALL THE TRIANGLES */
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+/*FIRST WE SET WIDTH AND HEIGHT TO 0 */
+
+/*THIS TARGETS ALL THE TRIANGLES */
+.triangle{
+    width: 0;
+    height: 0;
+}
+
+/*WE CREATE FIRST TRIANGLE WHICH POINTS UPWARDS*/
+.upward{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+/*NEXT TRIANGLE WHICH POINTS DOWNWARDS */
+
+.downward{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid black;
+}
+
+/* NEXT WE CREATE TRIANGLE WHICH FACE LEFT */
+.left{
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid black;
+}
+
+/*LASTLY WE CREATE TRIANGLE WHICH FACE RIGHT */
+
+.right{
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid black;
+}
