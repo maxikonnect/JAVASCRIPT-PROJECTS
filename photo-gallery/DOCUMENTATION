@@ -1,0 +1,78 @@
+# Documentation for Photo Gallery Project
+
+## Overview
+This project demonstrates how to create a responsive photo gallery using **HTML**, **CSS**, and **SASS**. The gallery is designed to showcase a collection of images with interactive hover effects and modern styling principles. It is suitable for beginners and intermediate developers who want to learn how to structure, style, and optimize a simple web project.
+
+---
+
+## Files Structure
+```
+project-folder/
+|-- Assets/
+|   |-- images/
+|       |-- card1.jpg
+|       |-- card2.jpg
+|       |-- card3.jpg
+|       |-- card4.jpg
+|       |-- card5.jpg
+|       |-- card6.jpg
+|       |-- card7.jpg
+|       |-- card8.jpg
+|-- style/
+|   |-- style.css
+|   
+|-- sass/
+|   |--style.scss
+|-- index.html
+
+- **Assets/images/**: Contains the image files displayed in the gallery.
+- **style/**: Includes the CSS and SASS files for styling.
+- **index.html**: The main HTML file that structures the gallery.
+
+---
+
+## How to Run
+1. **Set up the project:**
+   - Download and organize the files in the directory structure provided above.
+2. **Open the project:**
+   - Open `index.html` in your favorite web browser. Simply double-click the file or open it via a live server for better development experience.
+3. **Customize:**
+   - Modify the SASS variables in `style.scss` to personalize colors, fonts, and layout.
+
+---
+
+## Features
+### 1. Responsive Design
+- Utilizes CSS `flexbox` for flexible image alignment.
+- Ensures the gallery looks great on both desktop and mobile devices.
+
+### 2. Hover Effects
+- Each image reacts to hover with subtle scaling and opacity changes.
+- Heading styles include dynamic underline effects for a modern look.
+
+### 3. Reusable SASS Variables
+- Provides a clean and maintainable styling structure.
+- Allows quick customization of primary colors, font sizes, and more.
+
+### 4. Simple File Structure
+- Easy-to-follow organization for beginners.
+
+---
+
+## Technologies Used
+1. **HTML5**:
+   - Semantic structure for creating the gallery.
+2. **CSS3**:
+   - Styled components and hover effects.
+3. **SASS**:
+   - Advanced styling with variables, nesting, and mixins for cleaner code.
+
+
+
+
+## License
+This project is open-source and available for personal or educational use. You are free to modify and distribute it as long as proper credit is given.
+
+
+
+
