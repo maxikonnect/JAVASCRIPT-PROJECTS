@@ -1,0 +1,164 @@
+Here is a detailed documentation for the provided codebase:
+
+---
+
+### **Documentation**
+
+#### **Overview**
+This project creates a responsive navigation bar with a portfolio theme. It includes a toggleable menu for smaller screens and employs SCSS for advanced styling. The navigation bar has smooth transitions and a modern design, and the structure adheres to accessibility standards.
+
+---
+
+### **Files Overview**
+1. **HTML File (`index.html`)**
+   - Defines the structure of the webpage, including the header, navigation links, and toggle button for smaller screens.
+   - Includes external styles (`style.css`) and a JavaScript file (`script.js`) for interactive behavior.
+
+2. **JavaScript File (`script.js`)**
+   - Adds interactivity to the menu button for toggling navigation links on smaller screens.
+
+3. **SCSS File (main styles)**
+   - Contains the variables, mixins, and styles for theming, layout, typography, and responsiveness.
+   - Uses SCSS for modular and maintainable CSS.
+
+---
+
+### **HTML Breakdown**
+
+#### **Header Section**
+- **Logo (`<a href="#home" class="logo">portfolio</a>`):**
+  The clickable logo redirects to the home section and uses a hover animation.
+
+- **Navigation Menu (`<nav class="navbar">`):**
+  Contains links to different sections (`home`, `about`, `portfolio`, and `contact`).
+
+- **Menu Button (`<div id="menu-btn" class="fas fa-bars"></div>`):**
+  Toggles visibility of the navigation menu on small screens.
+
+#### **External Resources**
+- **FontAwesome:**
+  Provides the hamburger menu icon (`fas fa-bars`).
+
+- **Custom CSS and JavaScript:**
+  Links the external stylesheet (`style.css`) and JavaScript file (`script.js`).
+
+---
+
+### **JavaScript Functionality**
+The JavaScript file enables menu toggle functionality:
+
+```javascript
+let menu = document.getElementById("menu-btn");
+let navbar = document.querySelector(".navbar");
+
+menu.addEventListener('click', function () {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+```
+
+- **Event Listener:**
+  Listens for clicks on the `menu-btn` element.
+  
+- **Class Toggling:**
+  - Adds or removes `fa-times` class to the menu button.
+  - Toggles the `active` class on the navigation menu, showing or hiding it.
+
+---
+
+### **SCSS Styling**
+
+#### **Color Variables**
+Defined for theme consistency and easy updates:
+- Primary Colors: `$color-primary`, `$color-black`, `$color-white`.
+- Secondary Colors: `$color-purple`, `$color-grey`, `$color-blue`.
+
+#### **Typography**
+Font families, weights, and sizes are modularly defined for reuse.
+
+#### **Header Styling**
+- **Logo Animation:**
+  Underlines the logo text on hover with a smooth transition.
+
+- **Navigation Links:**
+  Styled with padding, hover effects, and transitions for responsiveness.
+
+#### **Responsive Design**
+- **Breakpoints:**
+  Uses media queries to adjust styles for screens below 767px.
+  
+- **Mobile Menu:**
+  - The menu button becomes visible.
+  - The navigation links are hidden by default and displayed as a vertical list when toggled.
+
+---
+
+### **CSS Variables**
+Defined in the `:root` selector to enable reusability:
+```css
+:root {
+  --color-primary: #D73953;
+  --font-size-medium: 1.6rem;
+  --transition-effect: 0.2s linear;
+  /* Additional variables for theme consistency */
+}
+```
+
+---
+
+### **SCSS Features**
+1. **Mixins:**
+   Simplifies repeated patterns (e.g., hover effects, responsive design).
+
+2. **Nesting:**
+   Enables better readability and reduces redundancy:
+   ```scss
+   .header {
+       .logo {
+           &:hover::before {
+               width: 100%;
+           }
+       }
+   }
+   ```
+
+3. **Custom Selectors:**
+   Tailors styles for specific pseudo-classes or elements:
+   ```scss
+   * {
+       &::selection {
+           background-color: var(--color-black);
+       }
+       &::-webkit-scrollbar {
+           background-color: transparent;
+       }
+   }
+   ```
+
+---
+
+### **Features**
+1. **Responsive Navigation Bar:**
+   Automatically adjusts layout based on screen size.
+   
+2. **Theming:**
+   Uses SCSS variables for colors, fonts, and spacing.
+
+3. **Smooth Animations:**
+   Transitions for hover effects and menu toggling.
+
+4. **Accessibility:**
+   Clean structure and semantic elements ensure accessibility.
+
+---
+
+### **How to Use**
+1. Include the files in your project directory:
+   - `index.html`
+   - `style/style.css` (compiled from SCSS)
+   - `js/script.js`
+
+2. Add your custom links or adjust the styles using SCSS variables.
+
+3. Run the project using a local server (e.g., Live Server in VS Code).
+
